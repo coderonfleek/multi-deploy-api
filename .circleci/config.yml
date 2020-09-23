@@ -37,7 +37,7 @@ jobs:
       - heroku/deploy-via-git:
           app-name: $HEROKU_PRODUCTION_APP_NAME
 orbs:
-  heroku: circleci/heroku@x.y
+  heroku: circleci/heroku@0.0.10
 version: 2.1
 workflows:
   heroku_deploy:
