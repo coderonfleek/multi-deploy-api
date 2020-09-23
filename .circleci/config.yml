@@ -46,10 +46,6 @@ workflows:
       - test:
           requires:
             - stage
-      - hold:
-          type: approval
-          requires:
-            - test
       - deploy:
           requires:
-            - hold
+            - test
